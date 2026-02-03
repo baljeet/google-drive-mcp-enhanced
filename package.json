@@ -1,0 +1,35 @@
+{
+  "name": "google-drive-mcp-enhanced",
+  "version": "1.0.0",
+  "description": "Enhanced Google Drive MCP server with comprehensive comment, suggestion, and sharing support",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "google-drive-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "google-drive",
+    "model-context-protocol",
+    "comments",
+    "collaboration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "googleapis": "^144.0.0",
+    "zod": "^3.24.1",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}
